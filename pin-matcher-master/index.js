@@ -38,7 +38,7 @@ function matchingPin() {
   }
   if (leftTry === 0) {
     generatedPin = "";
-    notify.innerHTML = `<p class="notify">No try left...</p>`;
+    notify.innerHTML = `<p class="notify">No try left.Please generate another pin.</p>`;
   }
 
   if (generatedPin == inputedPin) {
