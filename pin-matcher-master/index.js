@@ -12,10 +12,10 @@ btn.addEventListener("click", function () {
   }
 });
 
-var keyBoard = document.getElementsByClassName("button");
+var numberPressed = document.getElementsByClassName("button");
 
-for (let i = 0; i < keyBoard.length; i++) {
-  const element = keyBoard[i];
+for (let i = 0; i < numberPressed.length; i++) {
+  const element = numberPressed[i];
 
   element.addEventListener("click", function (e) {
     var calculatorText = document.getElementById("calculator-text");
