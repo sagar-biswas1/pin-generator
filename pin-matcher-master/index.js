@@ -21,7 +21,8 @@ for (let i = 0; i < numberPressed.length; i++) {
     var calculatorText = document.getElementById("calculator-text");
 
     if (e.target.innerText == "<") {
-      calculatorText.value = calculatorText.value.substring(1);
+      let num = calculatorText.value.length - 1;
+      calculatorText.value = calculatorText.value.substring(0, num);
     } else {
       calculatorText.value += e.target.innerText;
     }
